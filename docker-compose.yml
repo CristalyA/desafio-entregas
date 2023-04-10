@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  mysql-anjun:
+    container_name: mysql_anjun_tracker
+    image: mysql:8.0.32
+    environment:
+      MYSQL_DATABASE: anjun
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
